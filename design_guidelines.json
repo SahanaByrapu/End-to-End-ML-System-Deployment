@@ -1,0 +1,148 @@
+{
+  "identity": {
+    "name": "E1 - The Anti-AI Designer",
+    "mission": "Create a high-performance, emotionally directed ML Ops dashboard that feels like a command center, not a spreadsheet.",
+    "principles": [
+      "Fusion over Imitation: Mix 'Bloomberg Terminal' density with 'Linear' polish.",
+      "Emotion First: The user feels powerful, in control, and precise.",
+      "Content is King: Data is the protagonist. Visuals support, never distract.",
+      "Zoom In: Focus on the anomaly, the metric that changed.",
+      "Negative Space: Use it to group logic, not just to fill space."
+    ]
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Space Grotesk, sans-serif",
+      "body": "Inter, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-4xl md:text-5xl font-bold tracking-tight",
+      "h2": "text-3xl font-semibold tracking-tight",
+      "h3": "text-2xl font-medium tracking-normal",
+      "body": "text-sm leading-relaxed text-muted-foreground",
+      "body_large": "text-base leading-relaxed text-foreground",
+      "caption": "text-xs text-muted-foreground uppercase tracking-wider",
+      "mono_data": "font-mono text-xs tracking-tight"
+    },
+    "instructions": "Use Space Grotesk for all major section headers and metric values. Use Inter for labels and descriptions. Use JetBrains Mono for logs, IDs, and raw data values."
+  },
+  "colors": {
+    "palette": {
+      "type": "dark",
+      "background": "#09090B",
+      "surface": "#18181B",
+      "surface_highlight": "#27272A",
+      "border": "#27272A",
+      "text_primary": "#FAFAFA",
+      "text_secondary": "#A1A1AA",
+      "primary": "#3B82F6",
+      "secondary": "#22C55E",
+      "destructive": "#EF4444",
+      "accent_purple": "#8B5CF6",
+      "accent_orange": "#F97316"
+    },
+    "usage": {
+      "dashboard_bg": "bg-[#09090B]",
+      "card_bg": "bg-[#121212] border border-[#27272A]",
+      "active_item": "bg-[#27272A] text-white",
+      "success_metric": "text-[#22C55E]",
+      "error_metric": "text-[#EF4444]",
+      "neutral_metric": "text-[#A1A1AA]"
+    },
+    "forbidden": [
+      "Generates gradients for backgrounds",
+      "#1B93A4 (Teal)",
+      "Pure Black #000000 (Always use #09090B or #0A0A0A)"
+    ]
+  },
+  "layout": {
+    "grid_system": {
+      "dashboard": "grid grid-cols-1 md:grid-cols-12 gap-4 p-4 md:p-6",
+      "card_internal": "flex flex-col gap-4 p-5"
+    },
+    "bento_strategy": {
+      "mode": "Mode B (High Density)",
+      "hero_chart": "col-span-12 md:col-span-8 lg:col-span-9 row-span-2",
+      "metric_sidebar": "col-span-12 md:col-span-4 lg:col-span-3 flex flex-col gap-4",
+      "log_feed": "col-span-12 md:col-span-4 row-span-2 h-[400px]"
+    },
+    "spacing": {
+      "container_padding": "p-6 md:p-8",
+      "section_gap": "gap-8",
+      "item_gap": "gap-3"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": {
+      "overlay": "bg-black/60 backdrop-blur-xl border border-white/10",
+      "usage": "Use for sticky filters, modal dialogs, and floating command bars."
+    },
+    "borders": {
+      "tracing_beam": "Use for active experiment cards. Animate a gradient border on hover.",
+      "tech_grid": "Use a subtle SVG grid background (opacity 0.05) on the main dashboard background."
+    },
+    "shadows": {
+      "card_hover": "shadow-[0_0_30px_-10px_rgba(59,130,246,0.3)]",
+      "glow_text": "drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_15px_-3px_rgba(59,130,246,0.4)]",
+      "secondary": "bg-secondary/10 text-secondary hover:bg-secondary/20 border border-secondary/20",
+      "ghost": "hover:bg-white/5 text-muted-foreground hover:text-white"
+    },
+    "cards": {
+      "metric": "bg-card/50 border-border/50 hover:border-primary/50 transition-colors duration-300",
+      "experiment": "group relative overflow-hidden bg-[#0A0A0A] border border-white/5 hover:border-white/10 transition-all"
+    },
+    "charts": {
+      "library": "Recharts (via Shadcn Charts)",
+      "style": "Minimal axes, no grid lines (or very subtle), bright distinct lines for models.",
+      "colors": ["#3B82F6", "#22C55E", "#F97316", "#8B5CF6", "#EF4444"]
+    }
+  },
+  "assets": {
+    "images": {
+      "login_background": "https://images.unsplash.com/photo-1647356191320-d7a1f80ca777?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MTJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMG5ldXJhbCUyMG5ldHdvcmslMjBkYXRhJTIwZmxvdyUyMGRhcmslMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc3MTM4ODU1NHww&ixlib=rb-4.1.0&q=85",
+      "user_avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Felix",
+      "logo_placeholder": "Use a simple geometric shape (e.g., a hexagon or cube) in CSS/SVG."
+    },
+    "icons": {
+      "library": "lucide-react",
+      "preferred": ["Activity", "GitBranch", "Layers", "Cpu", "Zap", "Settings", "LayoutDashboard", "LineChart", "AlertCircle"]
+    }
+  },
+  "universal_guidelines": {
+    "rules": [
+      "You tend to converge toward generic outputs. Avoid 'AI slop'.",
+      "Dark colors look good when used independently. DO NOT use dark colors as gradients.",
+      "Don't make generic centered layouts. Use grids and asymmetry.",
+      "Create depth through layered design elements with z-index hierarchy.",
+      "Use glass-morphism effects with backdrop filters (12-24px blur) for floating elements.",
+      "You MUST NOT apply universal transition (transition: all). Use specific transitions.",
+      "You MUST NOT center align the app container. Text-align left is the web standard.",
+      "Always use modern button styles (pill or sharp).",
+      "NEVER use AI assistant Emojis (🤖, 🧠, etc.) for icons. Use Lucide React icons.",
+      "Every interaction needs micro-animations (hover, focus, active).",
+      "Use 2-3x more spacing than feels comfortable.",
+      "Subtle grain textures and noise overlays separate good from extraordinary.",
+      "Missing image URLs = Main agent will use placeholder text which is FORBIDDEN. Use the provided URLs.",
+      "Components MUST use named exports.",
+      "Use 'sonner' for toasts.",
+      "All interactive elements MUST include a 'data-testid' attribute."
+    ]
+  },
+  "workflow": {
+    "steps": [
+      "Step 1: Setup the 'Performance Pro' Dark Mode theme in Tailwind config.",
+      "Step 2: Build the 'App Shell' (Sidebar + Header + Main Area) with a sticky glassmorphic header.",
+      "Step 3: Create atomic components (MetricCard, StatusBadge, ExperimentRow) using the design rules.",
+      "Step 4: Implement the Dashboard page with the Bento Grid layout (Charts + Metrics).",
+      "Step 5: Implement the Experiment Tracking table with sortable columns and status indicators.",
+      "Step 6: Add the Model Comparison view with Recharts.",
+      "Step 7: Refine with 'Tracing Beam' effects and 'Glitch' animations on hover."
+    ]
+  }
+}
